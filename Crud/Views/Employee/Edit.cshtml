@@ -1,0 +1,17 @@
+﻿@model Crud.Models.Employees;
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<form method="post" asp-action="Edit">
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+    <br />
+    <input asp-for="Salary" />
+    <span asp-validation-for="Salary"></span>
+    <br />
+    <input type="Submit" value="Submit" />
+
+</form>
